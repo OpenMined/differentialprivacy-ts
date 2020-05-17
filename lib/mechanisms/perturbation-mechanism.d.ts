@@ -11,9 +11,9 @@ declare type Result<T> = T | StatusCode;
 declare abstract class PerturbationMechanism<T extends number> {
     readonly Epsilon: number;
     readonly CurrentStatus: StatusCode;
-    protected readonly _epsilon: number;
-    protected readonly _delta: number;
-    protected readonly _currentStatus: StatusCode;
+    protected _epsilon: number;
+    protected _delta: number;
+    protected _currentStatus: StatusCode;
     abstract addNoise(sensitivity: number, queryResult: T): Result<T>;
     protected abstract getLowerBounds(): number;
     protected abstract getUpperBounds(): number;

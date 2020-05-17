@@ -54,8 +54,6 @@
     "instrument": true
   },
   "dependencies": {
-    "@stdlib/stdlib": "^0.0.91",
-    "@types/": "stdlib/stdlib",
     "got": "9.6.0"
   },
   "devDependencies": {
